@@ -1,7 +1,13 @@
-const set = new Set();
+// const set = new Set();
+// set.add("apple");
+// set.add("banana");
+// set.add("mango")
+// console.log(set.size);
 
-set.add("apple");
-set.add("banana");
-set.add("mango")
+const arr = ["apple","mango","banana","orange", " apple", "mango"]
 
-console.log(set.size);
+const set = new Set(arr)
+
+set.add("tomato")
+
+console.log(set)
