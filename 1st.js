@@ -2,6 +2,7 @@
 
 // console.time("Task");
 const firstArray = []
+const set = new Set();
 const secondArray = []
 for (let i = 0; i<= 6000000; i++)
 {
