@@ -3,6 +3,15 @@
 // console.time("Task");
 const firstArray = []
 const set = new Set();
+const map = new Map();
+for (let i = 0; i<= 6000000; i++)
+{
+    if (i <= 3000000)   
+    {
+        firstArray.push(i);
+        set.add(i);
+        map.set(i, i);
+    }
 const secondArray = []
 for (let i = 0; i<= 6000000; i++)
 {
