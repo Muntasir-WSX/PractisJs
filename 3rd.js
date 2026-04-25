@@ -5,6 +5,7 @@ for (let i = 0; i<= 6000000; i++)
     {
         console.log(i);
         console.log("First half");
+        console.log(" 2nd HALF");
     }
 }
 
