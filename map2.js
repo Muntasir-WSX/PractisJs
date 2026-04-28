@@ -12,3 +12,11 @@ console.log(prices); // [100, 150, 200]
 
 const discountedPrices = shop.map((item) => item.price - (item.price * item.discount / 100));
 console.log(discountedPrices); // [100, 135, 160]
+
+const nameAndPrice = shop.map((item) => `${item.name}: $${item.price}`);
+console.log(nameAndPrice); // ['apple: $100', 'banana: $150', 'orange: $200']
+
+const nameAndDiscountedPrice = shop.map((item) => `${item.name}: $${item.price - (item.price * item.discount / 100)}`);
+if (nameAndDiscountedPrice.length > 0) {
+  console.log(nameAndDiscountedPrice); // ['apple: $100', 'banana: $135', 'orange: $160']
+}
