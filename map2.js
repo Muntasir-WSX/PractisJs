@@ -20,3 +20,8 @@ const nameAndDiscountedPrice = shop.map((item) => `${item.name}: $${item.price -
 if (nameAndDiscountedPrice.length > 0) {
   console.log(nameAndDiscountedPrice); // ['apple: $100', 'banana: $135', 'orange: $160']
 }
+
+
+const nameAndDiscountedPriceWithCheck = shop.map((item) => {
+  if (item.discount > 0) {
+    return `${item.name}: $${item.price - (item.price * item.discount / 100)}`;
